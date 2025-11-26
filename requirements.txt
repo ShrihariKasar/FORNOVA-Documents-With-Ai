@@ -1,0 +1,10 @@
+Flask
+pdfplumber
+python-docx
+pytesseract
+Pillow
+transformers
+torch
+spacy
+pandas
+mysql-connector-python

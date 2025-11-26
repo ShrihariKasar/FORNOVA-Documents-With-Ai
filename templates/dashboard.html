@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>All Processed Records</h3>
+<table>
+    <tr><th>ID</th><th>Name</th><th>Email</th><th>Phone</th><th>Skills</th><th>Status</th></tr>
+    {% for row in data %}
+    <tr>
+        <td>{{ row.id }}</td>
+        <td>{{ row.name }}</td>
+        <td>{{ row.email }}</td>
+        <td>{{ row.phone }}</td>
+        <td>{{ row.skills }}</td>
+        <td>{{ "Approved" if row.approved else "Pending" }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
